@@ -26,7 +26,7 @@ export default function Home() {
         </a>
         <p>&</p>
         <a href="https://praxime.me" className={ComingSoonStyles.developer}>
-          <img src="https://cdn.praxime.me/friends/praximenobg.png" />
+          <img src="https://cdn.praxime.me/praximenobg.png" />
           <p>Praxime</p>
         </a>
       </div>
