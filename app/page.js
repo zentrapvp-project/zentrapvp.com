@@ -16,7 +16,7 @@ export default function Home() {
       <video className={ComingSoonStyles.backgroundVideo} autoPlay muted loop controls={false} src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/noir/videos/202587-918431513_medium%20(1).mp4" />
       <div className={ComingSoonStyles.header}></div>
       <div className={ComingSoonStyles.main}>
-        <h1>Coming soon...</h1>
+        <h1>Coming Soon...</h1>
       </div>
       <div className={ComingSoonStyles.footer}>
           <p>Built With 💗 For You By</p>
