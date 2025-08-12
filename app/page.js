@@ -19,14 +19,14 @@ export default function Home() {
         <h1>Coming Soon...</h1>
       </div>
       <div className={ComingSoonStyles.footer}>
-          <p>Built With 💗 For You By</p>
+          <p>Built with 💙 by</p>
         <a href="https://cortik.vercel.app" className={ComingSoonStyles.developer}>
           <img src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/noir/logo/Cortik%20White%20Logo.png" />
           <p>Cortik</p>
         </a>
         <p>&</p>
-        <a href="https://praxime.ir" className={ComingSoonStyles.developer}>
-          <img src="https://cdn.praxime.me/praximeorangebg.png" />
+        <a href="https://praxime.me" className={ComingSoonStyles.developer}>
+          <img src="https://cdn.praxime.me/friends/praximenobg.png" />
           <p>Praxime</p>
         </a>
       </div>
