@@ -1,95 +1,35 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+
+import ComingSoonStyles from "./ComingSoon.module.scss"
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+    <div className={ComingSoonStyles.comingSoonContainer}>
+      <div className={ComingSoonStyles.blueGlow} />
+      <div className={ComingSoonStyles.blueGlow} />
+      <div className={ComingSoonStyles.blueGlow} />
+      <div className={ComingSoonStyles.blueGlow} />
+      <div className={ComingSoonStyles.redGlow} />
+      <div className={ComingSoonStyles.redGlow} />
+      <div className={ComingSoonStyles.redGlow} />
+      <div className={ComingSoonStyles.redGlow} />
+      <video className={ComingSoonStyles.backgroundVideo} autoPlay muted loop controls={false} src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/noir/videos/202587-918431513_medium%20(1).mp4" />
+      <div className={ComingSoonStyles.header}></div>
+      <div className={ComingSoonStyles.main}>
+        <h1>Coming Soon...</h1>
+      </div>
+      <div className={ComingSoonStyles.footer}>
+          <p>Built With 💗 For You By</p>
+        <a href="https://cortik.vercel.app" className={ComingSoonStyles.developer}>
+          <img src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/noir/logo/Cortik%20White%20Logo.png" />
+          <p>Cortik</p>
         </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
+        <p>&</p>
+        <a href="https://praxime.ir" className={ComingSoonStyles.developer}>
+          <img src="https://cdn.praxime.me/praximeorangebg.png" />
+          <p>Praxime</p>
         </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
