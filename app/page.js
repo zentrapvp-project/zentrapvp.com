@@ -13,7 +13,7 @@ export default function Home() {
       <div className={ComingSoonStyles.redGlow} />
       <div className={ComingSoonStyles.redGlow} />
       <div className={ComingSoonStyles.redGlow} />
-      <video className={ComingSoonStyles.backgroundVideo} autoPlay muted loop controls={false} src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/noir/videos/202587-918431513_medium%20(1).mp4" />
+      <video className={ComingSoonStyles.backgroundVideo} autoPlay muted loop controls={false} src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/videos/202587-918431513_medium%20(1).mp4" />
       <div className={ComingSoonStyles.header}></div>
       <div className={ComingSoonStyles.main}>
         <h1>Coming Soon...</h1>
@@ -21,7 +21,7 @@ export default function Home() {
       <div className={ComingSoonStyles.footer}>
           <p>Built with 💙 by</p>
         <a href="https://cortik.vercel.app" className={ComingSoonStyles.developer}>
-          <img src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/noir/logo/Cortik%20White%20Logo.png" />
+          <img src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Cortik%20White%20Logo.png" />
           <p>Cortik</p>
         </a>
         <p>&</p>
