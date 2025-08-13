@@ -16,6 +16,8 @@
         background-color: cyan;
         z-index: 2;
         filter: blur(100);
+        -ms-filter: blur(100);
+        -webkit-filter: blur(100);
         mix-blend-mode: color;
     }
 
