@@ -15,9 +15,9 @@
         height: 500px;
         background-color: cyan;
         z-index: 2;
-        filter: blur(100);
-        -ms-filter: blur(100);
-        -webkit-filter: blur(100);
+        filter: blur(100px);
+        -ms-filter: blur(100px);
+        -webkit-filter: blur(100px);
         mix-blend-mode: color;
     }
 
