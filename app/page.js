@@ -11,7 +11,8 @@ export default function Home() {
         <div className={HomepageStyles.mainContent}>
             <h1>ZentraPvP</h1>
             <p>The first Iranian Minecraft server focused on Compitition and PvP</p>
-            <p>Join now to feel the real gaming compition</p>
+            <p>Step into a world where skill, strategy, and speed decide the victor!</p>
+            <p>Join now to feel the real gaming compitition</p>
             <div className={HomepageStyles.actionsContainer}>
             <Button type={"alt"} >play.zentrapvp.com</Button>
             <Button>Connect</Button>
