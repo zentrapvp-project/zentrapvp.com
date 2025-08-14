@@ -1,0 +1,58 @@
+@use "../../colors.scss" as *;
+
+.button {
+    position: relative;
+    z-index: 0;
+    min-width: 90px;
+    height: 35px;
+    padding: 0 10px;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    margin: 5px;
+    color: white;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 5.2s ease-in-out;
+    background: linear-gradient(135deg, rgb(0, 229, 255) 30% , rgb(255, 13, 0) 70%);
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    
+    &:hover {
+        transition: all 5.2s ease-in-out;
+        scale: 1.1;
+    }
+    
+    p {
+        color: black;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    
+    &.alt {
+
+        background: linear-gradient(135deg, rgb(0, 229, 255) 30% , rgb(255, 13, 0) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, rgb(0, 229, 255),rgb(0, 5, 76), rgb(222, 20, 9));
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
+        }
+    }
+
+
+}

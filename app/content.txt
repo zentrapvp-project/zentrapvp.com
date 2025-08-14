@@ -1,0 +1,179 @@
+<div className={HomepageStyles.blueGlow} />
+        <div className={HomepageStyles.blueGlow} />
+        <div className={HomepageStyles.blueGlow} />
+        <div className={HomepageStyles.blueGlow} />
+        <div className={HomepageStyles.redGlow} />
+        <div className={HomepageStyles.redGlow} />
+        <div className={HomepageStyles.redGlow} />
+        <div className={HomepageStyles.redGlow} />
+        <video className={HomepageStyles.backgroundVideo} autoPlay muted loop controls={false} src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/videos/202587-918431513_medium%20(1).mp4" />
+        <Image className={`${HomepageStyles.topLeft}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/120px-Enchanted_Golden_Helmet_(item)%201.png`} />
+        <Image className={`${HomepageStyles.topLeft} ${HomepageStyles.glow}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/120px-Enchanted_Golden_Helmet_(item)%201.png`} />
+        <Image className={`${HomepageStyles.topRight}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Creeper_Head_(S)_JE1%201.png`} />
+        <Image className={`${HomepageStyles.topRight} ${HomepageStyles.glow}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Creeper_Head_(S)_JE1%201.png`} />
+        <Image className={`${HomepageStyles.bottomLeft}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Enchanted_Diamond_Sword%201.png`} />
+        <Image className={`${HomepageStyles.bottomLeft} ${HomepageStyles.glow}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Enchanted_Diamond_Sword%201.png`} />
+        <Image className={`${HomepageStyles.bottomRight}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/PotionOfNightVisionNew%201.png`} />
+        <Image className={`${HomepageStyles.bottomRight} ${HomepageStyles.glow}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/PotionOfNightVisionNew%201.png`} />
+        <div className={HomepageStyles.mainContent}>
+          <h1>ZentraPvP</h1>
+          <p>The first Iranian Minecraft server focused on Compitition and PvP</p>
+          <p>Join now to feel the real gaming compition</p>
+          <div className={HomepageStyles.actionsContainer}>
+            <Button type={"alt"} >play.zentrapvp.com</Button>
+            <Button>Connect</Button>
+          </div>
+        </div>
+
+
+
+        .blueGlow {
+        top: -10%;
+        left: -10%;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-color: cyan;
+        z-index: 2;
+        filter: blur(100px);
+        -ms-filter: blur(100px);
+        -webkit-filter: blur(100px);
+        mix-blend-mode: color;
+    }
+
+    .redGlow {
+        bottom: -10%;
+        right: -10%;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        z-index: 2;
+        filter: blur(100px);
+        -ms-filter: blur(100px);
+        -webkit-filter: blur(100px);
+        mix-blend-mode: color;
+    }
+
+    .backgroundVideo {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(70%)brightness(0.2);
+        z-index: 1;
+    }
+
+
+    .topLeft {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        top: 32%;
+        left: 30%;
+        transform: translate(-50% , -50%);
+        position: absolute;
+        z-index: 3;
+        animation: moveVerticalTopLeft 2s 1s ease-in-out infinite;
+
+        &.glow {
+            filter: blur(30px)saturate(10);
+            opacity: 0.35;
+            z-index: 2;
+        }
+
+    }
+
+    .topRight {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        top: 26%;
+        left: 68%;
+        transform: translate(-50% , -50%);
+        position: absolute;
+        z-index: 3;
+        animation: moveVerticalTopRight 2s 0.3s ease-in-out infinite;
+
+        &.glow {
+            filter: blur(30px)saturate(10);
+            opacity: 0.35;
+            z-index: 2;
+        }
+
+    }
+
+    .bottomLeft {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        top: 68%;
+        left: 69%;
+        transform: translate(-50% , -50%);
+        position: absolute;
+        z-index: 3;
+        animation: moveVerticalBottomLeft 2s 0.6s ease-in-out infinite;
+
+        &.glow {
+            filter: blur(30px)saturate(10);
+            opacity: 0.35;
+            z-index: 2;
+        }
+
+    }
+
+    .bottomRight {
+        width: 180px;
+        height: 180px;
+        object-fit: contain;
+        top: 68%;
+        left: 30%;
+        transform: translate(-50% , -50%);
+        position: absolute;
+        z-index: 3;
+        animation: moveVerticalBottomRight 2s 0.4s ease-in-out infinite;
+
+        &.glow {
+            filter: blur(15px);
+            opacity: 0.7;
+            z-index: 2;
+        }
+
+    }
+
+    .mainContent {
+        width: 100%;
+        height: calc(100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 3;
+
+        h1 {
+            font-size: 68px;
+            font-weight: 900;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .actionsContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin: 5px 0;
+
+            a,button {
+                margin: 0 5px;
+            }
+
+        }
+
+    }
