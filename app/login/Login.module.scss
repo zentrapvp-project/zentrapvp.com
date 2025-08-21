@@ -25,12 +25,14 @@
             font-size: 48px;
             font-weight: 900;
             color: white;
+            text-align: center;
         }
 
         h2 {
             font-size: 18px;
             font-weight: 600;
             color: white;
+            text-align: center;
         }
 
         .loginInput {
@@ -185,4 +187,35 @@
 
     }
     
+}
+
+@media screen and (max-width: 900px) {
+    .loginContainer {
+        .login {
+            width: 100% !important;
+            h1 {
+                width: 100%;
+            }
+            h2 {
+                width: 100%;
+            }
+
+            .loginInput {
+                width: 95% !important;
+            }
+
+        }
+        .image {
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .loginContainer {
+        .login {
+            scale: 0.9 !important;
+
+        }
+    }
 }
