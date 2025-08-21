@@ -4,6 +4,10 @@
     position: relative;
     z-index: 0;
     min-width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     height: 35px;
     padding: 0 10px;
     background-color: transparent;
@@ -12,31 +16,50 @@
     color: white;
     font-size: 13px;
     border: none;
-    border-radius: 10px;
+    border-radius: 100px;
     cursor: pointer;
     transition: all 5.2s ease-in-out;
-    background: linear-gradient(135deg, rgb(0, 229, 255) 30% , rgb(255, 13, 0) 70%);
-    color: black;
+    background-color: rgba($color: white, $alpha: 0.035);
+    backdrop-filter: blur(5px);
     font-size: 13px;
     font-weight: 500;
-    
+    user-select: none;
+
     &:hover {
         transition: all 5.2s ease-in-out;
         scale: 1.1;
     }
     
-    p {
-        color: black;
+    svg {
+        font-size: white;
         font-size: 13px;
-        font-weight: 500;
     }
 
+    p {
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    &.primary {
+        background: linear-gradient(135deg, rgb(0, 229, 255) 30% , rgb(255, 13, 0) 70%);
+        color: black;
+
+        * {
+            color: black;
+        }
+
+    }
     
     &.alt {
 
-        background: linear-gradient(135deg, rgb(0, 229, 255) 30% , rgb(255, 13, 0) 70%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        // background: linear-gradient(135deg, rgb(0, 229, 255) 30% , rgb(255, 13, 0) 70%);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+
+        p {
+            color: white;
+        }
         
         &::before {
             content: "";
@@ -52,7 +75,25 @@
             mask-composite: exclude;
             z-index: -1;
         }
+
+        svg {
+            color: white;
+        }
+
     }
+
+    &.disabled {
+        background-color: rgba($color: white, $alpha: 0.035);
+        backdrop-filter: blur(5px);
+        color: rgba($color: white, $alpha: 0.15);
+        cursor: default;
+        
+        * {
+            color: rgba($color: white, $alpha: 0.15);
+        }
+
+    }
+    
 
 
 }

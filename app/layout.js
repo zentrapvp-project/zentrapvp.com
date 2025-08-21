@@ -7,8 +7,13 @@ export const metadata = {
   title: "ZentraPvP | Feel The Real Competition",
   description: "ZentraPvP is a new Minecraft server built by Iranian developers",
 };
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false; /* eslint-disable import/first */
 
 export default function RootLayout({ children }) {
+  
+
   return (
     <html lang="en" className={LayoutStyles.html} >
       <body className={LayoutStyles.app} >
@@ -56,26 +61,7 @@ export default function RootLayout({ children }) {
           <div className={LayoutStyles.redGlow} />
           <div className={LayoutStyles.redGlow} />
           <video className={LayoutStyles.backgroundVideo} autoPlay muted loop controls={false} src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/videos/202587-918431513_medium%20(1).mp4" />
-          <div className={LayoutStyles.footer}>
-            <div className={LayoutStyles.version}>
-              <p>ZentraPvP - BETA v1.0</p>
-            </div>
-            <div className={LayoutStyles.developers} >
-              <p>Built with 💙 by</p>
-              <a href="https://cortik.vercel.app" className={LayoutStyles.developer}>
-                <img src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Cortik%20White%20Logo.png" />
-                <p>Cortik</p>
-              </a>
-              <p>&</p>
-              <a href="https://praxime.me" className={LayoutStyles.developer}>
-                <img src="https://cdn.praxime.me/praximenobg.png" />
-                <p>Praxime</p>
-              </a>
-            </div>
-            <div className={LayoutStyles.empty}>
-
-            </div>
-          </div>
+          
         </div>
 
       </body>

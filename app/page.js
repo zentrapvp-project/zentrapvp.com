@@ -27,6 +27,26 @@ export default function Home() {
         </div>
 
       </div>
+      <div className={HomepageStyles.footer}>
+        <div className={HomepageStyles.version}>
+          <p>ZentraPvP - BETA v1.0</p>
+        </div>
+        <div className={HomepageStyles.developers} >
+          <p>Built with 💙 by</p>
+          <a href="https://cortik.vercel.app" className={HomepageStyles.developer}>
+            <img src="https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Cortik%20White%20Logo.png" />
+            <p>Cortik</p>
+          </a>
+          <p>&</p>
+          <a href="https://praxime.me" className={HomepageStyles.developer}>
+            <img src="https://cdn.praxime.me/praximenobg.png" />
+            <p>Praxime</p>
+          </a>
+        </div>
+        <div className={HomepageStyles.empty}>
+
+        </div>
+      </div>
 
       
       

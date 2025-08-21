@@ -126,6 +126,79 @@
         }
 
     }
+
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-top: 1px solid rgba($color: white, $alpha: 0.075);
+    z-index: 2;
+    padding: 0 20px;
+    backdrop-filter: blur(20px);
+
+    .version {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+        }
+
+    }
+
+    .developers {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .developer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin: 0 4px;
+            padding: 4px 6px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(30, 30, 30);
+            }
+
+            img {
+                width: 18px;
+                height: 18px;
+                object-fit: contain;
+                margin-right: 2px;
+            }
+
+        }
+    }
+
+
+    .empty {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+        }
+
+    }
 }
 
 .barSections {
@@ -258,4 +331,48 @@
     0% {top: 100%;}
     50% {top: 95%;}
     100% {top: 100%;}
+}
+
+
+@media screen and (max-width: 650px) {
+    .footer {
+        padding: 0 10px !important;
+        .version {
+            width: 25% !important;
+            p {
+                font-size: 11px !important;
+                text-wrap: nowrap !important;
+            }
+        }
+        .developers {
+            width: 75% !important;
+            justify-content: flex-end !important;
+            .developer {
+                margin: 0 2px !important;
+                img {
+                    width: 15px !important;
+                    height: 15px !important;
+                }
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
+        .empty {
+            display: none !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .footer {
+        .version {
+            display: none !important;
+        }
+        .developers {
+            width: 100% !important;
+            justify-content: center !important;
+        }
+    }
 }
