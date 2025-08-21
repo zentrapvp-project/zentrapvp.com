@@ -101,6 +101,10 @@
             align-items: center;
             flex-direction: row;
 
+            svg {
+                font-size: 16px;
+            }
+
             .discord {
                 width: 40% !important;
                 background-color: #284ac7 !important;
@@ -118,6 +122,30 @@
                 > * {
                     margin: 0 2px;
                     color: rgb(255, 25, 0);
+                }
+
+            }
+
+            .cortik {
+                width: 40% !important;
+                background-color: #040404 !important;
+                border: 1px solid rgba($color: white, $alpha: 0.075);
+                cursor: default;
+                overflow: hidden;
+
+                > * {
+                    margin: 0 2px;
+                    color: white;
+                }
+
+                &:hover {
+                    scale: 1;
+                }
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                    object-fit: contain;
                 }
 
             }

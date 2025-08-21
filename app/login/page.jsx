@@ -152,6 +152,28 @@ export default function LoginPage(params) {
                         <FontAwesomeIcon icon={faGoogle} />
                         <p>Google</p>
                     </Button>
+                    <Button className={LoginStyles.cortik}>
+                        <div
+                            className={LoginStyles.overlay}
+                            style={{
+                                width: "100%",
+                                height: "100%",
+                                backgroundSize: "128px",
+                                backgroundRepeat: "repeat",
+                                backgroundImage: "url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')",
+                                opacity: 0.05,
+                                borderRadius: 0,
+                                position: "fixed",
+                                top: 0,
+                                left: 0,
+                                zIndex: 90,
+                                pointerEvents: "none",
+                                margin: "0"
+                            }}
+                        ></div>
+                        <Image width={50} height={50} alt="Cortik Logo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Cortik%20White%20Logo.png`} />
+                        <p>Cortik</p>
+                    </Button>
                 </div>
                 <div className={LoginStyles.didYouKnowLine} />
                 <p style={{opacity: number ? "1" : "0"}} className={LoginStyles.didYouKnow}>Did you know</p>
