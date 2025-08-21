@@ -15,7 +15,7 @@ export default function Home() {
             <p>Join now to feel the real gaming compitition</p>
             <div className={HomepageStyles.actionsContainer}>
             <Button type={"alt"} >play.zentrapvp.com</Button>
-            <Button>Connect</Button>
+            <Button href={`/login`}>Connect</Button>
             <Image className={`${HomepageStyles.topLeft}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/120px-Enchanted_Golden_Helmet_(item)%201.png`} />
             <Image className={`${HomepageStyles.topLeft} ${HomepageStyles.glow}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/120px-Enchanted_Golden_Helmet_(item)%201.png`} />
             <Image className={`${HomepageStyles.topRight}`} width={150} height={150} alt="Yo" src={`https://khlahvgbqpyjfmwrjayp.supabase.co/storage/v1/object/public/cortik/logo/Creeper_Head_(S)_JE1%201.png`} />

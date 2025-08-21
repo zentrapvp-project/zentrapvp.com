@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
                 <p>Team</p>
               </div>
               <div className={LayoutStyles.mobileMenuIcon}>
-                <Button type={"alt"} >Connect</Button>
+                <Button href={`/connect`} type={"alt"} >Connect</Button>
               </div>
             </div>
 
