@@ -203,6 +203,21 @@
             }
 
             .loginInput {
+                width: 400px !important;
+            }
+
+        }
+        .image {
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .loginContainer {
+        .login {
+
+            .loginInput {
                 width: 95% !important;
             }
 
