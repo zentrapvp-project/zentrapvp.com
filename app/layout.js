@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
 
             <div className={LayoutStyles.mobileNav}>
               <div className={LayoutStyles.mobileMenu}>
-                <p>Contact Us</p> {/* Popup biyad */}
+                <p>Contact Us</p>
                 <Link href={`https://discord.gg/MKPTdxvfcf`}>Discord</Link>
                 <Link href={`/shop`}>Shop</Link>
                 <p>Play</p>
